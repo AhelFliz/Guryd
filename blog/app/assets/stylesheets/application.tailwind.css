@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md cursor-pointer;
+}
+
+.btn-blue {
+  @apply text-white bg-blue-500 hover:bg-blue-700;
+}
+
+.btn-green {
+  @apply text-white bg-green-500 hover:bg-green-700;
+}
+
+.btn-indigo {
+  @apply text-white bg-indigo-600 hover:bg-indigo-700;
+}

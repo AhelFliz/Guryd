@@ -1,0 +1,9 @@
+<%= form_with(model: post, local: true) do |f| %>
+  <%= f.label :title, class: "block mt-6 text-sm font-medium text-gray-700" %>
+  <%= f.text_field :title, class: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" %>
+
+  <%= f.label :body, class: "block mt-6 text-sm font-medium text-gray-700" %>
+  <%= f.text_area :body, rows: 10, class: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" %>
+
+  <%= f.submit "Save Post", class: "btn btn-blue mt-6" %>
+<% end %>
